@@ -51,7 +51,7 @@ public class FizzBuzzTest {
     @Test
     public void should_return_fizz_buzz_when_divisible_by_3_and_7_and_5() {
         //given
-        int number = 15;
+        int number = 21;
         String result = getResult(number);
         //then
         assertEquals("FizzWhizz", result);
@@ -59,7 +59,7 @@ public class FizzBuzzTest {
     @Test
     public void should_return_fizz_buzz_when_divisible_by_5_and_7_not_3() {
         //given
-        int number = 15;
+        int number = 35;
         String result = getResult(number);
         //then
         assertEquals("BuzzWhizz", result);
@@ -68,7 +68,7 @@ public class FizzBuzzTest {
     @Test
     public void should_return_fizz_buzz_when_divisible_by_3_and_5_and_7() {
         //given
-        int number = 15;
+        int number = 105;
         String result = getResult(number);
         //then
         assertEquals("FizzBuzzWhizz", result);
