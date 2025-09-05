@@ -14,13 +14,6 @@ public class FizzBuzzTest {
         assertEquals("1", result);
     }
 
-    private static String getResult(int number) {
-        FizzBuzz fizzBuzz = new FizzBuzz();
-        //when
-        String result = fizzBuzz.countOff(number);
-        return result;
-    }
-
     @Test
     public void should_return_fizz_when_divisible_by_3_but_not_5() {
         //given
@@ -47,7 +40,12 @@ public class FizzBuzzTest {
         //then
         assertEquals("FizzBuzz", result);
     }
-
+    private static String getResult(int number) {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.countOff(number);
+        return result;
+    }
 
 
 }
