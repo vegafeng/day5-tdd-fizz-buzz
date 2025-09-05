@@ -10,8 +10,9 @@ public class FizzBuzzTest {
         //given
         int number = 1;
         String result = getResult(number);
+        String target = "1";
         //then
-        assertEquals("1", result);
+        assertEquals(target, result);
     }
 
     @Test
@@ -19,8 +20,9 @@ public class FizzBuzzTest {
         //given
         int number = 3;
         String result = getResult(number);
+        String target = "Fizz";
         //then
-        assertEquals("Fizz", result);
+        assertEquals(target, result);
     }
 
     @Test
@@ -28,8 +30,9 @@ public class FizzBuzzTest {
         //given
         int number = 5;
         String result = getResult(number);
+        String target = "Buzz";
         //then
-        assertEquals("Buzz", result);
+        assertEquals(target, result);
     }
 
     @Test
@@ -37,32 +40,36 @@ public class FizzBuzzTest {
         //given
         int number = 7;
         String result = getResult(number);
+        String target = "Whizz";
         //then
-        assertEquals("Whizz", result);
+        assertEquals(target, result);
     }
     @Test
     public void should_return_fizz_buzz_when_divisible_by_3_and_5_not_7() {
         //given
         int number = 15;
         String result = getResult(number);
+        String target = "FizzBuzz";
         //then
-        assertEquals("FizzBuzz", result);
+        assertEquals(target, result);
     }
     @Test
     public void should_return_fizz_buzz_when_divisible_by_3_and_7_and_5() {
         //given
         int number = 21;
         String result = getResult(number);
+        String target = "FizzBuzzWhizz";
         //then
-        assertEquals("FizzWhizz", result);
+        assertEquals(target, result);
     }
     @Test
     public void should_return_fizz_buzz_when_divisible_by_5_and_7_not_3() {
         //given
         int number = 35;
         String result = getResult(number);
+        String target = "BuzzWhizz";
         //then
-        assertEquals("BuzzWhizz", result);
+        assertEquals(target, result);
     }
 
     @Test
@@ -70,8 +77,9 @@ public class FizzBuzzTest {
         //given
         int number = 105;
         String result = getResult(number);
+        String target = "FizzBuzzWhizz";
         //then
-        assertEquals("FizzBuzzWhizz", result);
+        assertEquals(target, result);
     }
 
     private static String getResult(int number) {
